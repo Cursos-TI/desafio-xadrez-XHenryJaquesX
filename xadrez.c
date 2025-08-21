@@ -1,32 +1,445 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    
+    int escolhaPeca, menuPrincipal = 1, escolhaMovimento, andarCasas, menuMovimento;
+while (menuPrincipal)
+{
+printf("Escolha sua peça: \n\n");
+printf("1. Torre\n");
+printf("2. Bispo\n");
+printf("3. Rainha\n");
+printf("4. Sair do programa\n\n");
+printf("Escolha: ");
+scanf("%d", &escolhaPeca);
+printf("\n\n");
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+switch (escolhaPeca)
+{
+case 1:
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    menuMovimento = 1;
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    while (menuMovimento)
+    {
+        printf("Você escolheu a Torre, qual o movimento você gostaria que ela fizesse?\n\n");
+        printf("1. Para cima\n");
+        printf("2. Para baixo\n");
+        printf("3. Para esquerda\n");
+        printf("4. Para direita\n");
+        printf("5. Voltar\n\n");
+        printf("Escolha: ");
+        scanf("%d",&escolhaMovimento);
+        printf("\n\n");
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+        switch (escolhaMovimento)
+        {
+        case 1:
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+            printf("Você escolheu para cima!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Cima\n\n");
+            }
 
-    return 0;
+            printf("\n");
+
+            return 0;
+        
+        break;
+    
+        case 2:
+
+            printf("Você escolheu para baixo!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+            printf("Baixo\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+
+        break;      
+
+        case 3:
+
+            printf("Você escolheu para esquerda!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+            printf("Esquerda\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+        
+        break;
+
+        case 4:
+
+            printf("Você escolheu para direita!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+            printf("Direita\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+        
+        break;
+
+        case 5:
+
+            menuMovimento = 0;
+
+        break;
+
+        default:
+
+            printf("Opção inválida!\n\n");
+
+        break;
+
+        }
+    }
+    
+break;
+
+case 2:
+
+    menuMovimento = 1;
+
+    while (menuMovimento)
+    {
+        printf("Você escolheu o Bispo, qual movimento você gostaria que ele fizesse?\n\n");
+        printf("1. Diagonal direita para cima\n");
+        printf("2. Diagonal esquerda para cima\n");
+        printf("3. Diagonal direita para baixo\n");
+        printf("4. Diagonal esqueda para baixo\n");
+        printf("5. Voltar\n\n");
+        printf("Escolha: ");
+        scanf("%d", &escolhaMovimento);
+        printf("\n\n");
+
+        switch (escolhaMovimento)
+        {
+        case 1:
+            
+            printf("Você escolheu diagonal direita para cima!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Cima\n");
+                printf("Direita\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+
+        break;
+
+        case 2:
+            
+            printf("Você escolheu diagonal esquerda para cima!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Cima\n");
+                printf("Esquerda\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+
+        break;
+
+        case 3:
+            
+            printf("Você escolheu diagonal direita para baixo!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Baixo\n");
+                printf("Direita\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+
+        break;
+
+        case 4:
+            
+            printf("Você escolheu diagonal esquerda para baixo!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Baixo\n");
+                printf("Esquerda\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+
+        break;
+
+        case 5:
+
+            menuMovimento = 0;
+        
+        default:
+
+            printf("Opção inválida!\n\n");
+
+        break;
+        }
+
+    }
+
+break;
+
+case 3:
+
+    menuMovimento = 1;
+
+    while (menuMovimento)
+    {
+        printf("Você escolheu a Rainha, qual movimento você gostaria que ela fizesse?\n\n");
+        printf("1. Para cima\n");
+        printf("2. Para baixo\n");
+        printf("3. Para esquerda\n");
+        printf("4. Para direita\n");
+        printf("5. Diagonal direita para cima\n");
+        printf("6. Diagonal esquerda para cima\n");
+        printf("7. Diagonal direita para baixo\n");
+        printf("8. Diagonal esqueda para baixo\n");
+        printf("9. Voltar\n\n");
+        printf("Escolha: ");
+        scanf("%d", &escolhaMovimento);
+        printf("\n\n");
+        
+        switch (escolhaMovimento)
+        {
+        case 1:
+
+            printf("Você escolheu para cima!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Cima\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+                    
+        break;
+
+        case 2:
+
+            printf("Você escolheu para baixo!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Baixo\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+        break;
+        
+        case 3:
+
+            printf("Você escolheu para esquerda!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Esquerda\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+        
+        break;
+
+        case 4:
+
+            printf("Você escolheu para direita!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Direita\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+        
+        break;
+
+        case 5:
+            
+            printf("Você escolheu diagonal direita para cima!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Cima\n");
+                printf("Direita\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+
+        break;
+
+        case 6:
+            
+            printf("Você escolheu diagonal esquerda para cima!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Cima\n");
+                printf("Esquerda\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+
+        break;
+
+        case 7:
+            
+            printf("Você escolheu diagonal direita para baixo!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Baixo\n");
+                printf("Direita\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+
+        break;
+
+        case 8:
+            
+            printf("Você escolheu diagonal esquerda para baixo!\n");
+            printf("Quantas casas você gostaria de andar?\n");
+            printf("Faça sua escolha: ");
+            scanf("%d", &andarCasas);
+            printf("\n\n");
+
+            for (; andarCasas > 0; andarCasas--)
+            {
+                printf("Baixo\n");
+                printf("Esquerda\n\n");
+            }
+
+            printf("\n");
+
+            return 0;
+
+        break;
+
+        case 9:
+            
+            menuMovimento = 0;
+
+        break;
+
+        default:
+            printf("Opção inválida!\n\n");
+        break;
+        }
+    }
+    
+
+break;
+    
+case 4:
+printf("Saiu do programa!\n");
+menuPrincipal = 0;
+break;
+    
+default:
+printf("Opção inválida, voltando ao menu principal...\n\n");
+break;
+}
+}
 }
