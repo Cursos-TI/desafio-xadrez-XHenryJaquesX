@@ -9,7 +9,8 @@ printf("Escolha sua peça: \n\n");
 printf("1. Torre\n");
 printf("2. Bispo\n");
 printf("3. Rainha\n");
-printf("4. Sair do programa\n\n");
+printf("4. Cavalo\n");
+printf("5. Sair do programa\n\n");
 printf("Escolha: ");
 scanf("%d", &escolhaPeca);
 printf("\n\n");
@@ -431,8 +432,183 @@ case 3:
     
 
 break;
-    
+
 case 4:
+
+    menuMovimento = 1;
+
+    while (menuMovimento)
+    {
+        printf("Você escolheu o Cavalo, qual movimento você gostaria que ele fizesse?\n\n");
+        printf("1. Dois para cima e um para esquerda\n");
+        printf("2. Dois para cima e um para direita\n");
+        printf("3. Dois para baixo e um para esquerda\n");
+        printf("4. Dois para baixo e um para direita\n");
+        printf("5. Dois para esquerda e um para cima\n");
+        printf("6. Dois para esquerda e um para baixo\n");
+        printf("7. Dois para direita e um para cima\n");
+        printf("8. Dois para direita e um para baixo\n");
+        printf("9. Voltar\n\n");
+        printf("Escolha: ");
+        scanf("%d", &escolhaMovimento);
+        printf("\n\n");
+
+        switch (escolhaMovimento)
+        {
+        case 1:
+        {
+            int cavalo1Casa = 1;
+            
+            while (cavalo1Casa--)
+            {
+                for (int cavalo2Casa = 1; cavalo2Casa >= 0; cavalo2Casa--)
+                {
+                    printf("Cima\n");
+                }
+                printf("Esquerda\n\n");
+            }
+            
+            return 0;
+        }
+        break;
+
+        case 2:
+        {
+            int cavalo1Casa = 1;
+            
+            while (cavalo1Casa--)
+            {
+                for (int cavalo2Casa = 1; cavalo2Casa >= 0; cavalo2Casa--)
+                {
+                    printf("Cima\n");
+                }
+                printf("Direita\n\n");
+            }
+            
+            return 0;
+        }
+        break;
+
+        case 3:
+        {
+            int cavalo1Casa = 1;
+            
+            while (cavalo1Casa--)
+            {
+                for (int cavalo2Casa = 1; cavalo2Casa >= 0; cavalo2Casa--)
+                {
+                    printf("Baixo\n");
+                }
+                printf("Esquerda\n\n");
+            }
+            
+            return 0;
+        }
+        break;
+
+        case 4:
+        {
+            int cavalo1Casa = 1;
+            
+            while (cavalo1Casa--)
+            {
+                for (int cavalo2Casa = 1; cavalo2Casa >= 0; cavalo2Casa--)
+                {
+                    printf("Baixo\n");
+                }
+                printf("Direita\n\n");
+            }
+            
+            return 0;
+        }
+        break;
+
+        case 5:
+        {
+            int cavalo1Casa = 1;
+            
+            while (cavalo1Casa--)
+            {
+                for (int cavalo2Casa = 1; cavalo2Casa >= 0; cavalo2Casa--)
+                {
+                    printf("Esquerda\n");
+                }
+                printf("Cima\n\n");
+            }
+            
+            return 0;
+        }
+        break;
+
+        case 6:
+        {
+            int cavalo1Casa = 1;
+            
+            while (cavalo1Casa--)
+            {
+                for (int cavalo2Casa = 1; cavalo2Casa >= 0; cavalo2Casa--)
+                {
+                    printf("Esquerda\n");
+                }
+                printf("Baixo\n\n");
+            }
+            
+            return 0;
+        }
+        break;
+
+        case 7:
+        {
+            int cavalo1Casa = 1;
+            
+            while (cavalo1Casa--)
+            {
+                for (int cavalo2Casa = 1; cavalo2Casa >= 0; cavalo2Casa--)
+                {
+                    printf("Direita\n");
+                }
+                printf("Cima\n\n");
+            }
+            
+            return 0;
+        }
+        break;
+
+        case 8:
+        {
+            int cavalo1Casa = 1;
+            
+            while (cavalo1Casa--)
+            {
+                for (int cavalo2Casa = 1; cavalo2Casa >= 0; cavalo2Casa--)
+                {
+                    printf("Direita\n");
+                }
+                printf("Baixo\n\n");
+            }
+            
+            return 0;
+        }
+        break;
+
+        case 9:
+
+            menuMovimento = 0;
+        
+        default:
+
+            printf("Opção inválida\n\n");
+
+        break;
+        }
+    }
+    
+
+
+
+break;
+    
+case 5:
 printf("Saiu do programa!\n");
 menuPrincipal = 0;
 break;
