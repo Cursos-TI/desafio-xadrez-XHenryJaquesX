@@ -37,11 +37,20 @@ case 1:
         {
         case 1:
 
-            printf("Você escolheu para cima!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu para cima!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
+                
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+
+            } while (andarCasas <= 0);
 
             for (; andarCasas > 0; andarCasas--)
             {
@@ -56,12 +65,21 @@ case 1:
     
         case 2:
 
-            printf("Você escolheu para baixo!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu para baixo!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
 
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+
+            } while (andarCasas <= 0);
+            
             for (; andarCasas > 0; andarCasas--)
             {
             printf("Baixo\n\n");
@@ -70,17 +88,27 @@ case 1:
             printf("\n");
 
             return 0;
+            
 
         break;      
 
         case 3:
 
-            printf("Você escolheu para esquerda!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu para esquerda!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
 
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+
+            } while (andarCasas <= 0);
+            
             for (; andarCasas > 0; andarCasas--)
             {
             printf("Esquerda\n\n");
@@ -94,11 +122,20 @@ case 1:
 
         case 4:
 
-            printf("Você escolheu para direita!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu para direita!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
+
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+
+            } while (andarCasas <= 0);
 
             for (; andarCasas > 0; andarCasas--)
             {
@@ -122,10 +159,10 @@ case 1:
             printf("Opção inválida!\n\n");
 
         break;
-
         }
     }
-    
+
+
 break;
 
 case 2:
@@ -138,7 +175,7 @@ case 2:
         printf("1. Diagonal direita para cima\n");
         printf("2. Diagonal esquerda para cima\n");
         printf("3. Diagonal direita para baixo\n");
-        printf("4. Diagonal esqueda para baixo\n");
+        printf("4. Diagonal esquerda para baixo\n");
         printf("5. Voltar\n\n");
         printf("Escolha: ");
         scanf("%d", &escolhaMovimento);
@@ -148,11 +185,21 @@ case 2:
         {
         case 1:
             
-            printf("Você escolheu diagonal direita para cima!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu diagonal direita para cima!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n"); 
+                
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+
+            } while (andarCasas <= 0);
+            
 
             for (; andarCasas > 0; andarCasas--)
             {
@@ -168,11 +215,20 @@ case 2:
 
         case 2:
             
-            printf("Você escolheu diagonal esquerda para cima!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu diagonal esquerda para cima!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");       
+                
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+
+            } while (andarCasas <= 0);
 
             for (; andarCasas > 0; andarCasas--)
             {
@@ -188,11 +244,20 @@ case 2:
 
         case 3:
             
-            printf("Você escolheu diagonal direita para baixo!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu diagonal direita para baixo!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");    
+                
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+
+            } while (andarCasas <= 0);
 
             for (; andarCasas > 0; andarCasas--)
             {
@@ -208,11 +273,20 @@ case 2:
 
         case 4:
             
-            printf("Você escolheu diagonal esquerda para baixo!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu diagonal esquerda para baixo!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
+
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+
+            } while (andarCasas <= 0);
 
             for (; andarCasas > 0; andarCasas--)
             {
@@ -255,7 +329,7 @@ case 3:
         printf("5. Diagonal direita para cima\n");
         printf("6. Diagonal esquerda para cima\n");
         printf("7. Diagonal direita para baixo\n");
-        printf("8. Diagonal esqueda para baixo\n");
+        printf("8. Diagonal esquerda para baixo\n");
         printf("9. Voltar\n\n");
         printf("Escolha: ");
         scanf("%d", &escolhaMovimento);
@@ -265,12 +339,21 @@ case 3:
         {
         case 1:
 
-            printf("Você escolheu para cima!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu para cima!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");   
+                
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
 
+            } while (andarCasas <= 0);
+            
             for (; andarCasas > 0; andarCasas--)
             {
                 printf("Cima\n\n");
@@ -284,12 +367,21 @@ case 3:
 
         case 2:
 
-            printf("Você escolheu para baixo!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu para baixo!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
 
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+
+            } while (andarCasas <= 0);
+            
             for (; andarCasas > 0; andarCasas--)
             {
                 printf("Baixo\n\n");
@@ -302,12 +394,21 @@ case 3:
         
         case 3:
 
-            printf("Você escolheu para esquerda!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu para esquerda!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
 
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+
+            } while (andarCasas <= 0);
+            
             for (; andarCasas > 0; andarCasas--)
             {
                 printf("Esquerda\n\n");
@@ -321,11 +422,20 @@ case 3:
 
         case 4:
 
-            printf("Você escolheu para direita!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu para direita!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
+
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+                
+            } while (andarCasas <= 0);
 
             for (; andarCasas > 0; andarCasas--)
             {
@@ -340,12 +450,21 @@ case 3:
 
         case 5:
             
-            printf("Você escolheu diagonal direita para cima!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu diagonal direita para cima!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
 
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+                
+            } while (andarCasas <= 0);
+            
             for (; andarCasas > 0; andarCasas--)
             {
                 printf("Cima\n");
@@ -360,12 +479,21 @@ case 3:
 
         case 6:
             
-            printf("Você escolheu diagonal esquerda para cima!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu diagonal esquerda para cima!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
 
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+                
+            } while (andarCasas <= 0);
+            
             for (; andarCasas > 0; andarCasas--)
             {
                 printf("Cima\n");
@@ -380,12 +508,21 @@ case 3:
 
         case 7:
             
-            printf("Você escolheu diagonal direita para baixo!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu diagonal direita para baixo!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
 
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+                
+            } while (andarCasas <= 0);
+            
             for (; andarCasas > 0; andarCasas--)
             {
                 printf("Baixo\n");
@@ -400,11 +537,21 @@ case 3:
 
         case 8:
             
-            printf("Você escolheu diagonal esquerda para baixo!\n");
-            printf("Quantas casas você gostaria de andar?\n");
-            printf("Faça sua escolha: ");
-            scanf("%d", &andarCasas);
-            printf("\n\n");
+            do
+            {
+                printf("Você escolheu diagonal esquerda para baixo!\n");
+                printf("Quantas casas você gostaria de andar?\n");
+                printf("Faça sua escolha: ");
+                scanf("%d", &andarCasas);
+                printf("\n\n");
+
+                if (andarCasas <= 0)
+                {
+                    printf("Sua escolha tem que ser um número inteiro positivo!\n\n");
+                }
+                
+            } while (andarCasas <= 0);
+            
 
             for (; andarCasas > 0; andarCasas--)
             {
